@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛒 Fresh Grocery Store</h1>
+  <p>Buy fresh items at best price</p>
+</header>
+
+<div class="container">
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Products</h2>
+
+    <div class="product">
+      <img src="https://i.imgur.com/Q9ZpY9T.png">
+      <h3>Salt</h3>
+      <p>₹20</p>
+      <button onclick="addToCart('Salt',20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/YZy8KQq.png">
+      <h3>Apple</h3>
+      <p>₹50</p>
+      <button onclick="addToCart('Apple',50)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/Wv5QZKD.png">
+      <h3>Orange</h3>
+      <p>₹40</p>
+      <button onclick="addToCart('Orange',40)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/7bIhJxN.png">
+      <h3>Oil</h3>
+      <p>₹120</p>
+      <button onclick="addToCart('Oil',120)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- CART -->
+  <aside class="cart">
+    <h2>🛍 Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="buy" onclick="checkout()">Buy Now</button>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
